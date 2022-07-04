@@ -14,7 +14,6 @@ public class Main {
         Student student4 = new Student("Martin", 4);
 
 
-
         Student[] studentArray = new Student[4];
 
         studentArray[0] = student1;
@@ -24,17 +23,15 @@ public class Main {
 
         StudentDB studentDB = new StudentDB(studentArray);
 
-        System.out.println(studentDB.toString());
+        System.out.println(studentDB);
 
-        String s = Arrays.toString(studentDB.getAllStudents());
-        System.out.println(s);
+        String allStudents = Arrays.toString(studentDB.getAllStudents());
+        System.out.println(allStudents);
 
-        for(int i= 0; i < 100; i++){
+        for (int i = 0; i < 100; i++) {
             System.out.println(studentDB.randomStudent());
         }
 
-
-        System.out.println(studentDB.randomStudent());
 
     }
 }
