@@ -16,21 +16,22 @@ class StudentDBTest {
         Student [] studentArray = new Student[] {testStudent2, testStudent};
         StudentDB studentDB = new StudentDB(studentArray);
 
-        Student[] result = studentDB.getAllStudents();
-        Student [] actual = new Student [] {testStudent2, testStudent};
-        Assertions.assertEquals(Arrays.toString(actual), Arrays.toString(result));
+        Student[] actual = studentDB.getAllStudents();
+        Student [] expected = new Student [] {testStudent2, testStudent};
+        Assertions.assertArrayEquals(expected, actual);
 
     }
 
     @Test
     void testToString() {
         Student testStudent = new Student("Derek", 4);
+        Student testStudent2= new Student("David", 32);
 
-        Student [] studentArray = new Student[] {testStudent};
+        Student [] studentArray = new Student[] {testStudent, testStudent2};
         StudentDB studentDB = new StudentDB(studentArray);
 
         String result = studentDB.toString();
-        Assertions.assertEquals("students=[name = Derek id =4]", result);
+        Assertions.assertEquals("students=[name = Derek id = 4, name = David id = 32]", result);
     }
 
     @Test

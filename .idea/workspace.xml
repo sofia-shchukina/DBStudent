@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="172b877a-746c-499a-b737-eb693aa09c0b" name="Changes" comment="">
+    <list default="true" id="172b877a-746c-499a-b737-eb693aa09c0b" name="Changes" comment="initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/StudentDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/StudentDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/StudentDBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/StudentDBTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -31,23 +31,25 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2BU1pRdGXhepiSrNDwQOGPGZE4M" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "/Users/sonia/IdeaProjects/DBStudent",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/sonia/IdeaProjects/DBStudent&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -59,7 +61,7 @@
       <recent name="model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StudentDBTest.testToString">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="DBStudent" />
@@ -101,9 +103,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StudentDBTest.testToString" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.StudentDBTest.getAllStudentsTest" />
+        <item itemvalue="JUnit.StudentDBTest.testToString" />
       </list>
     </recent_temporary>
   </component>
@@ -117,8 +119,24 @@
       <updated>1656946035123</updated>
       <workItem from="1656946038166" duration="4206000" />
       <workItem from="1656950765998" duration="1609000" />
-      <workItem from="1656965098150" duration="1396000" />
+      <workItem from="1656965098150" duration="5339000" />
+      <workItem from="1657011249335" duration="1953000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1656966778926</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656966778926</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial commit">
+      <created>1656966822727</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656966822727</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,12 +153,16 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
-          <line>8</line>
+          <line>9</line>
           <properties class="Main" method="main">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

@@ -14,7 +14,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "name = " + name + " id =" + id;
+        return "name = " + name + " id = " + id;
     }
 
     @Override

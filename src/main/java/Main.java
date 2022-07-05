@@ -1,3 +1,4 @@
+import model.ITStudent;
 import model.Student;
 import model.StudentDB;
 
@@ -21,6 +22,8 @@ public class Main {
         studentArray[2] = student3;
         studentArray[3] = student4;
 
+
+
         StudentDB studentDB = new StudentDB(studentArray);
 
         System.out.println(studentDB);
@@ -28,10 +31,15 @@ public class Main {
         String allStudents = Arrays.toString(studentDB.getAllStudents());
         System.out.println(allStudents);
 
-        for (int i = 0; i < 100; i++) {
-            System.out.println(studentDB.randomStudent());
-        }
+        //for (int i = 0; i < 100; i++) {
+        //    System.out.println(studentDB.randomStudent());
+        //}
+        ITStudent itStudent = new ITStudent("Mark", 31, "Java");
+        System.out.println(itStudent);
 
-
+        //ITStudent itStudent1 = (ITStudent) new Student("Noah", 25);
+        Student itStudent2 = new ITStudent("Ida", 105, "C");
+        //System.out.println(itStudent1);
+        System.out.println(itStudent2);
     }
 }
