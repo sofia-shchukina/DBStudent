@@ -11,9 +11,9 @@ class StudentDBTest {
 
     @Test
     void getAllStudentsTest() {
-        Student testStudent = new Student("Derek", 4);
-        Student testStudent2= new Student("David", 32);
-        Student [] studentArray = new Student[] {testStudent2, testStudent};
+        ITStudent testStudent = new ITStudent("Derek", 4, "C++");
+        ITStudent testStudent2= new ITStudent("David", 32, "java");
+        ITStudent [] studentArray = new ITStudent[] {testStudent2, testStudent};
         StudentDB studentDB = new StudentDB(studentArray);
 
         Student[] actual = studentDB.getAllStudents();
@@ -24,17 +24,14 @@ class StudentDBTest {
 
     @Test
     void testToString() {
-        Student testStudent = new Student("Derek", 4);
-        Student testStudent2= new Student("David", 32);
+        ITStudent testStudent = new ITStudent("Derek", 4, "Python");
+        ITStudent testStudent2= new ITStudent("David", 32, "R");
 
-        Student [] studentArray = new Student[] {testStudent, testStudent2};
+        ITStudent [] studentArray = new ITStudent[] {testStudent, testStudent2};
         StudentDB studentDB = new StudentDB(studentArray);
 
         String result = studentDB.toString();
-        Assertions.assertEquals("students=[name = Derek id = 4, name = David id = 32]", result);
+        Assertions.assertEquals("students=[ITStudent{language='Python', name='Derek', id=4}, ITStudent{language='R', name='David', id=32}]", result);
     }
 
-    @Test
-    void randomStudent() {
-    }
 }

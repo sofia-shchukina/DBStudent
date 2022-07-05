@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="172b877a-746c-499a-b737-eb693aa09c0b" name="Changes" comment="initial commit">
+    <list default="true" id="172b877a-746c-499a-b737-eb693aa09c0b" name="Changes" comment="add class ITstudent">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/ITStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ITStudent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/StudentDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/StudentDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/model/StudentDBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/StudentDBTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -69,6 +70,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StudentDBTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DBStudent" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.StudentDBTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StudentDBTest.getAllStudentsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DBStudent" />
       <extension name="coverage">
@@ -104,8 +120,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.StudentDBTest.getAllStudentsTest" />
         <item itemvalue="JUnit.StudentDBTest.testToString" />
+        <item itemvalue="JUnit.StudentDBTest" />
+        <item itemvalue="JUnit.StudentDBTest.getAllStudentsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -120,7 +137,7 @@
       <workItem from="1656946038166" duration="4206000" />
       <workItem from="1656950765998" duration="1609000" />
       <workItem from="1656965098150" duration="5339000" />
-      <workItem from="1657011249335" duration="1953000" />
+      <workItem from="1657011249335" duration="6139000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1656966778926</created>
@@ -136,7 +153,21 @@
       <option name="project" value="LOCAL" />
       <updated>1656966822727</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add class ITstudent">
+      <created>1657022624546</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1657022624546</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add class ITstudent">
+      <created>1657022656844</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1657022656844</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,14 +186,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="add class ITstudent" />
+    <option name="LAST_COMMIT_MESSAGE" value="add class ITstudent" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
-          <line>9</line>
+          <line>10</line>
           <properties class="Main" method="main">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

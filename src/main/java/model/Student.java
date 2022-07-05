@@ -2,7 +2,7 @@ package model;
 
 import java.util.Objects;
 
-public class Student {
+public abstract class Student {
 
     String name;
     int id;
@@ -18,7 +18,7 @@ public class Student {
     }
 
     @Override
-    public boolean equals(Object o) {
+    public  boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Student student = (Student) o;
@@ -29,4 +29,7 @@ public class Student {
     public int hashCode() {
         return Objects.hash(name, id);
     }
-}
+
+    public abstract void printStudent(Student student);
+    }
+
