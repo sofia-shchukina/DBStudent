@@ -25,6 +25,10 @@ public abstract class Student {
         return id == student.id && Objects.equals(name, student.name);
     }
 
+    public int getId() {
+        return id;
+    }
+
     @Override
     public int hashCode() {
         return Objects.hash(name, id);

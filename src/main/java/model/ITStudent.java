@@ -9,6 +9,10 @@ public class ITStudent extends Student implements Citizen{
         super(name, id);
         this.language = language;
     }
+    public ITStudent(String name, int id) {
+        super(name, id);
+
+    }
 
     @Override
     public String toString() {

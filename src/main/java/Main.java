@@ -3,41 +3,42 @@ import model.ITStudent;
 import model.Student;
 import model.StudentDB;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class Main {
 
 
     public static void main(String[] args) {
 
-        ITStudent student1 = new ITStudent("Felix", 1, "Java");
-        ITStudent student2 = new ITStudent("Anna", 2, "C");
-        ITStudent student3 = new ITStudent("Mari", 3, "Ruby");
-        ITStudent student4 = new ITStudent("Martin", 4, "php");
+        HashMap<Integer, Student> students = new HashMap<>();
 
+        ITStudent student1 = new ITStudent("Felix", 0, "Java");
+        ITStudent student2 =  new ITStudent("Anna", 1, "C");
+        ITStudent student3 = new ITStudent("Mari", 2, "Ruby");
+        ITStudent student4 =new ITStudent("Martin", 3, "php");
 
-        ITStudent[] studentArray = new ITStudent[4];
+        students.put(student1.getId(),student1);
+        students.put(student2.getId(),student2);
+        students.put(student3.getId(),student3);
+        students.put(student4.getId(),student4);
 
-        studentArray[0] = student1;
-        studentArray[1] = student2;
-        studentArray[2] = student3;
-        studentArray[3] = student4;
-
-        StudentDB studentDB = new StudentDB(studentArray);
+        StudentDB studentDB = new StudentDB(students);
 
         System.out.println(studentDB);
 
-        String allStudents = Arrays.toString(studentDB.getAllStudents());
+        String allStudents = String.valueOf(studentDB.getAllStudents());
         System.out.println(allStudents);
 
-        //for (int i = 0; i < 100; i++) {
-        //    System.out.println(studentDB.randomStudent());
-        //}
-        ITStudent itStudent = new ITStudent("Mark", 31, "Java");
+        for (int i = 0; i < 5; i++) {
+            System.out.println(studentDB.randomStudent());
+        }
+        ITStudent itStudent = new ITStudent("Mark", 4, "Java");
         System.out.println(itStudent);
 
 
-        ITStudent itStudent2 = new ITStudent("Ida", 105, "C");
+        ITStudent itStudent2 = new ITStudent("Ida", 5, "C");
         itStudent2.setAddress("Schillerplatz");
         itStudent2.setIdentityCardNumber(19282828);
 

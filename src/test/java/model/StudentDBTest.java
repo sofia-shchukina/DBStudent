@@ -3,7 +3,9 @@ package model;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -11,27 +13,32 @@ class StudentDBTest {
 
     @Test
     void getAllStudentsTest() {
-        ITStudent testStudent = new ITStudent("Derek", 4, "C++");
-        ITStudent testStudent2= new ITStudent("David", 32, "java");
-        ITStudent [] studentArray = new ITStudent[] {testStudent2, testStudent};
-        StudentDB studentDB = new StudentDB(studentArray);
+        HashMap<Integer, Student> students = new HashMap<>();
+        ITStudent student1 = new ITStudent("Felix", 0, "Java");
+        ITStudent student2 =  new ITStudent("Anna", 1, "C");
+        students.put(student1.getId(),student1);
+        students.put(student2.getId(),student2);
 
-        Student[] actual = studentDB.getAllStudents();
-        Student [] expected = new Student [] {testStudent2, testStudent};
-        Assertions.assertArrayEquals(expected, actual);
+        StudentDB studentDB = new StudentDB(students);
+
+        HashMap<Integer, Student> actual = studentDB.getAllStudents();
+        HashMap<Integer, Student> expected = students;
+        Assertions.assertEquals(expected, actual);
 
     }
 
     @Test
     void testToString() {
-        ITStudent testStudent = new ITStudent("Derek", 4, "Python");
-        ITStudent testStudent2= new ITStudent("David", 32, "R");
+        HashMap<Integer, Student> students = new HashMap<>();
+        ITStudent student1 = new ITStudent("Felix", 0, "Java");
+        ITStudent student2 =  new ITStudent("Anna", 1, "C");
+        students.put(student1.getId(),student1);
+        students.put(student2.getId(),student2);
 
-        ITStudent [] studentArray = new ITStudent[] {testStudent, testStudent2};
-        StudentDB studentDB = new StudentDB(studentArray);
+        StudentDB studentDB = new StudentDB(students);
 
         String result = studentDB.toString();
-        Assertions.assertEquals("students=[ITStudent{language='Python', name='Derek', id=4}, ITStudent{language='R', name='David', id=32}]", result);
+        Assertions.assertEquals("students={0=ITStudent{language='Java', name='Felix', id=0}, 1=ITStudent{language='C', name='Anna', id=1}}}", result);
     }
 
 }
